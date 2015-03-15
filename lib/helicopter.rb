@@ -8,6 +8,7 @@ module Helicopter
       end
 
       define_method "inherited" do |subclass|
+        super(subclass)
         subclasses << subclass
       end
     end
